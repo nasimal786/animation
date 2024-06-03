@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        #animated-logo {
+            position: absolute;
+            cursor: pointer;
+            top: 30%;
+            left: 0;
+            transform: translateY(-30%);
+            transition: all 12s;
+        }
+
+        .flipped {
+            transform: translateY(-50%) scaleX(-1);
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="logo-container">
+        <span id="animated-logo">
+            <img class="flipped" src="https://www.wizard.financial/static/media/wizaart-img.56787174.gif" width="120px">
+        </span>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
